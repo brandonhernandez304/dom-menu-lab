@@ -65,9 +65,17 @@ topMenuEl.classList = 'flex-around'
 // Append the new element to the topMenuElelement
 
 for (let i = 0; i < menuLinks.length; i++){
-    let link = document.createElement("a")
-    link.setAttribute("href", menuLinks[i].href)
-    link.textContent = menuLinks[i].href
-    topMenuEl.appendChild(link)
+     let link = document.createElement("a")
+     link.setAttribute("href", menuLinks[i].href)
+     link.textContent = menuLinks[i].text
+     topMenuEl.appendChild(link)
 
-}
+ }
+
+// menuLinks.forEach(eachLink => {
+//   let link = document.createElement("a")
+//   link.setAttribute("href", eachLink.href)
+//   link.textContent = eachLink.text
+//   topMenuEl.appendChild(link)
+// });
+
